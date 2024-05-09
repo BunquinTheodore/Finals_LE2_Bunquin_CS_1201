@@ -22,13 +22,13 @@ def main():
                     print("\n1. Start Game")
                     print("2. Show Top Scores")
                     print("3. Log Out")
-                    inner_choice = input("Enter your choice: ")
+                    inner_choice = int(input("Enter your choice: "))
 
-                    if inner_choice == "1":
+                    if inner_choice == 1:
                         user_manager.current_user.play_game()
-                    elif inner_choice == "2":
+                    elif inner_choice == 2:
                         user_manager.show_top_scores()
-                    elif inner_choice == "3":
+                    elif inner_choice == 3:
                         user_manager.log_out()
                         break
                     else:
